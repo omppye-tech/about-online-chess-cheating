@@ -53,7 +53,7 @@ Then, Player B will respond the move, that way CHESS.com will receive his respon
 With the move exchange dynamic described above, it is possible to think of a few ways to automate the game.
 Here we will modify CHESS.com source code to open a giant number of possibilities that will start from intercepting the match moves all the way to making a connection with an Engine.
 
-Fortunately, CHESS.com has a few security barriers to avoid that kind of modification – nothing that a tedious teenager with a lot of free time cannot solve.
+Fortunately, CHESS.com has a few security barriers to avoid that kind of modification – nothing that a person with a lot of free time cannot solve.
 Being simple, each play made on the website is encrypted with an algorithm of their own called TCN, the move “1. e4” for example, is converted into “mC”, the move “2. e6” is converted into “0S” and so on.
 That way, CHESS.com makes it impossible to send moves to the server that were not originated from the website itself.
 However, after a little bit of reverse engineering, its possible to isolate the code that is responsible for this encrypting. He is also available at [GitHub](https://github.com/omppye-tech/chess-tcn).
